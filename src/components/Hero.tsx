@@ -77,9 +77,9 @@ const Hero: React.FC = () => {
                 Recupere até
                 <div className="absolute -bottom-1 -left-1 w-16 h-16 bg-verde-claro/10 rounded-full filter blur-xl -z-10"></div>
               </span>
-              <span className="text-neon inline-block relative">
+              <span className="text-neon inline-block relative bg-verde-neon/25 px-3 py-1 rounded-md">
                 15 minutos
-                <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-verde-neon to-transparent rounded-full"></span>
+                <span className="absolute -bottom-1.5 left-0 w-full h-1 bg-gradient-to-r from-verde-neon to-transparent rounded-full"></span>
               </span>{" "}
               <span className="inline-block">em cada consulta</span>
             </h1>
@@ -132,7 +132,7 @@ const Hero: React.FC = () => {
                 <div className="absolute -inset-full top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full animate-shine" style={{animationDuration: '3s'}}></div>
                 
                 <img 
-                  src="/sistema-medico-preclin-conecta.png" 
+                  src="/Whisk_805a8d1455.jpg" 
                   alt="PréClin Conecta Sistema Médico Screenshot" 
                   className="w-full h-auto relative z-10 rounded-xl"
                 />
@@ -142,16 +142,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      {/* Premium scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce fadeIn transition-transform duration-300 hover:scale-110 group">
-        <span className="text-verde-escuro font-medium mb-2 relative px-4 py-1 bg-white/30 backdrop-blur-sm rounded-full border border-verde-claro/10 shadow-sm transition-colors duration-300 group-hover:text-verde-neon">Saiba mais</span>
-        <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-b from-verde-claro/20 to-transparent backdrop-blur-sm border border-verde-claro/10 shadow-md transition-colors duration-300 group-hover:bg-verde-claro/30">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-verde-escuro transition-colors duration-300 group-hover:text-verde-neon">
-            <path d="M12 5v14M5 12l7 7 7-7"/>
-          </svg>
         </div>
       </div>
     </section>

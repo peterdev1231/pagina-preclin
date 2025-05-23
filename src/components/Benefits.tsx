@@ -4,6 +4,9 @@ const Benefits: React.FC = () => {
   const benefitsRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
+    const currentRef = benefitsRef.current;
+    if (!currentRef) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -16,7 +19,7 @@ const Benefits: React.FC = () => {
       { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll('.fadeIn');
+    const elements = currentRef.querySelectorAll('.fadeIn');
     elements.forEach((el) => {
       observer.observe(el);
     });
@@ -25,6 +28,8 @@ const Benefits: React.FC = () => {
       elements.forEach((el) => {
         observer.unobserve(el);
       });
+      // It might be good to also disconnect the observer if the component unmounts
+      // observer.disconnect(); // Uncomment if needed, but ensure elements are unobserved first.
     };
   }, []);
 

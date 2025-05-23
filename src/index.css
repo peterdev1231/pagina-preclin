@@ -91,16 +91,6 @@
     @apply text-verde-neon shadow-neon;
   }
   
-  /* Premium glass card */
-  .premium-glass {
-    @apply backdrop-blur-lg bg-white/40 border border-white/40 shadow-xl rounded-xl relative overflow-hidden;
-  }
-  
-  .premium-glass::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-white/10 opacity-50;
-  }
-  
   /* Luxury division */
   .luxury-divider {
     @apply relative h-px w-full my-12;
@@ -190,48 +180,6 @@
 .float-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(26, 60, 52, 0.25);
-}
-
-/* Enhanced animations */
-@keyframes shine {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0) rotate(0); }
-  25% { transform: translateY(-15px) rotate(1.5deg); }
-  50% { transform: translateY(-5px) rotate(0.5deg); }
-  75% { transform: translateY(8px) rotate(-1deg); }
-}
-
-.animate-shine {
-  position: relative;
-  overflow: hidden;
-}
-
-.animate-shine::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  animation: shine 3s infinite;
-}
-
-.animate-float-slow {
-  animation: float-slow 15s ease-in-out infinite;
 }
 
 /* Enhanced glassmorphism */
