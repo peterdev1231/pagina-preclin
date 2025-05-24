@@ -73,13 +73,12 @@ const Hero: React.FC = () => {
               ref={headingRef}
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-verde-escuro mb-8 leading-tight fadeIn" style={{ animationDelay: '0.2s' }}
             >
-              <span className="relative block mb-2 z-10">
+              <span className="relative block mb-2 z-10 pb-1">
                 Recupere até
                 <div className="absolute -bottom-1 -left-1 w-16 h-16 bg-verde-claro/10 rounded-full filter blur-xl -z-10"></div>
               </span>
-              <span className="text-neon inline-block relative bg-verde-neon/25 px-3 py-1 rounded-md">
+              <span className="inline-block relative bg-verde-escuro text-white px-3 py-1 rounded-md">
                 15 minutos
-                <span className="absolute -bottom-1.5 left-0 w-full h-1 bg-gradient-to-r from-verde-neon to-transparent rounded-full"></span>
               </span>{" "}
               <span className="inline-block">em cada consulta</span>
             </h1>
@@ -132,7 +131,7 @@ const Hero: React.FC = () => {
                 <div className="absolute -inset-full top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full animate-shine" style={{animationDuration: '3s'}}></div>
                 
                 <img 
-                  src="/Whisk_805a8d1455.jpg" 
+                  src="/software para gestão de clinicas.webp" 
                   alt="PréClin Conecta Sistema Médico Screenshot" 
                   className="w-full h-auto relative z-10 rounded-xl"
                 />

@@ -126,11 +126,19 @@ const ValueSimulator: React.FC = () => {
                 <div className="relative">
                   <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-verde-escuro">R$</span>
                   <Input
-                    type="number"
-                    value={consultationValue}
-                    onChange={(e) => setConsultationValue(Number(e.target.value))}
+                    type="text"
+                    value={consultationValue.toString()}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      const numericValue = value.replace(/\D/g, '');
+
+                      if (numericValue === '') {
+                        setConsultationValue(0);
+                      } else {
+                        setConsultationValue(parseInt(numericValue, 10));
+                      }
+                    }}
                     className="pl-10 focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50 transition-all duration-300"
-                    min={50}
                     max={1000}
                   />
                 </div>

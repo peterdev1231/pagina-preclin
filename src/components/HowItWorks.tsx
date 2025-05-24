@@ -61,7 +61,7 @@ const HowItWorks: React.FC = () => {
               
               <div className="md:w-1/2 md:pl-12 text-center md:text-left">
                 <img 
-                  src="/how-it-works-1.png" 
+                  src="/painel para médicos 1.webp" 
                   alt="Cadastro de pacientes" 
                   className="rounded-lg shadow-premium w-full max-w-xs mx-auto md:ml-0 transition-transform duration-300 hover:scale-[1.05]"
                   loading="lazy"
@@ -85,8 +85,8 @@ const HowItWorks: React.FC = () => {
               
               <div className="md:w-1/2 md:pr-12 text-center md:text-right">
                 <img 
-                  src="/how-it-works-2.png" 
-                  alt="Envio de formulário" 
+                  src="/pre-consulta 3.webp" 
+                  alt="Visualização das informações" 
                   className="rounded-lg shadow-premium w-full max-w-xs mx-auto md:mr-0 transition-transform duration-300 hover:scale-[1.05]"
                   loading="lazy"
                 />
@@ -109,8 +109,8 @@ const HowItWorks: React.FC = () => {
               
               <div className="md:w-1/2 md:pl-12 text-center md:text-left">
                 <img 
-                  src="/how-it-works-3.png" 
-                  alt="Visualização das informações" 
+                  src="/inteligencia artificial para medicos 2.webp" 
+                  alt="Envio de formulário" 
                   className="rounded-lg shadow-premium w-full max-w-xs mx-auto md:ml-0 transition-transform duration-300 hover:scale-[1.05]"
                   loading="lazy"
                 />

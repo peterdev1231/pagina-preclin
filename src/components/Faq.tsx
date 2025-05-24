@@ -9,28 +9,28 @@ import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
-    question: "O processo é intuitivo e prático?",
-    answer: "Sim, desenvolvemos uma interface extremamente intuitiva tanto para médicos quanto para pacientes. Você poderá enviar formulários com apenas dois cliques, e seus pacientes os preencherão facilmente em qualquer dispositivo."
+    question: "O sistema PréClin Conecta é intuitivo e prático para médicos?",
+    answer: "Sim, desenvolvemos uma interface extremamente intuitiva tanto para médicos quanto para pacientes. Com nosso software para médicos, você poderá enviar formulários com apenas dois cliques, e seus pacientes os preencherão facilmente em qualquer dispositivo."
   },
   {
-    question: "Como envio o link para o paciente?",
-    answer: "Após cadastrar o paciente em nosso sistema, você pode enviar o link do formulário automaticamente por WhatsApp ou e-mail. O sistema também permite agendamento para envio automático dias antes da consulta."
+    question: "Como envio o link do formulário para o paciente usando o sistema?",
+    answer: "Após cadastrar o paciente em nosso sistema para médicos, você pode enviar o link do formulário automaticamente por WhatsApp ou e-mail."
   },
   {
     question: "É mesmo gratuito para testar?",
-    answer: "Sim! Oferecemos 7 dias de teste gratuito com todas as funcionalidades disponíveis. Não exigimos cartão de crédito para o período de teste, permitindo que você experimente sem compromisso."
+    answer: "Sim! Ao optar pelo plano anual, você tem 7 dias de teste gratuito com todas as funcionalidades disponíveis para experimentar a plataforma PréClin Conecta sem compromisso."
   },
   {
     question: "O que cobre a garantia de 7 dias?",
     answer: "Durante 7 dias, você tem acesso total a todos os recursos premium para testar a PréClin Conecta sem compromisso. Se não ficar satisfeito, basta cancelar sem custo."
   },
   {
-    question: "É difícil configurar e começar a usar a PréClin Conecta?",
-    answer: "Não! A PréClin Conecta foi projetada para ser intuitiva e fácil de usar. Oferecemos onboarding guiado e suporte para que você comece a otimizar suas consultas rapidamente."
+    question: "É difícil configurar e começar a usar o software PréClin Conecta?",
+    answer: "Não! O software para médicos PréClin Conecta foi projetado para ser intuitivo e fácil de usar. Oferecemos onboarding guiado e suporte para que você comece a otimizar suas consultas rapidamente com nosso sistema."
   },
   {
-    question: "Como a PréClin Conecta garante a segurança dos dados dos meus pacientes?",
-    answer: "Levamos a segurança a sério. Utilizamos criptografia de ponta e seguimos as melhores práticas de segurança para proteger todas as informações armazenadas na plataforma."
+    question: "Como o sistema PréClin Conecta garante a segurança dos dados dos meus pacientes?",
+    answer: "Levamos a segurança a sério. Nosso sistema para médicos utiliza criptografia de ponta e segue as melhores práticas de segurança para proteger todas as informações armazenadas na plataforma."
   }
 ];
 
@@ -136,18 +136,6 @@ const Faq: React.FC = () => {
               </AccordionItem>
             ))}
           </Accordion>
-          
-          <div className="mt-20 text-center fadeIn" style={{ animationDelay: '0.5s' }}>
-            <p className="text-lg mb-8 text-cinza-escuro/90">Ainda tem dúvidas? Entre em contato conosco</p>
-            <div className="relative inline-block group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-verde-claro/50 to-verde-escuro/50 rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-              <a href="#planos" className="block">
-                <Button className="relative premium-btn bg-gradient-to-r from-verde-escuro to-verde-claro hover:shadow-xl hover:shadow-verde-claro/20 transition-all duration-500 transform hover:translate-y-[-5px] py-6 px-10 text-lg focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50">
-                  Fale Conosco
-                </Button>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

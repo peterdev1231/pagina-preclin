@@ -11,21 +11,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Dr. Carlos Silva",
+    name: "Dr. Gabriel Oliveira",
     title: "Ortopedista",
     image: "/doctor-1.svg",
     quote: "Gerenciamento muito mais fácil, otimizando meu tempo. Consigo me concentrar no que realmente importa durante as consultas."
   },
   {
     id: 2,
-    name: "Dra. Mariana Costa",
+    name: "Dra. Isabella Pereira",
     title: "Dermatologista",
     image: "/doctor-2.svg",
     quote: "Ótimo para pacientes informados antes da consulta. A plataforma é intuitiva e facilita muito o dia a dia na clínica."
   },
   {
     id: 3,
-    name: "Dr. André Santos",
+    name: "Dr. Lucas Fernandes",
     title: "Cardiologista",
     image: "/doctor-3.svg",
     quote: "Economizei 12 minutos por consulta. Isso me permitiu atender mais pacientes e melhorar a qualidade do atendimento."
