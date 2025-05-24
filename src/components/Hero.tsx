@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div ref={heroRef} className="relative">
+          <div ref={heroRef} className="relative text-center lg:text-left mx-auto lg:mx-0">
             {/* Premium highlight accent */}
             <div className="absolute -left-4 -top-4 w-20 h-20 rounded-full bg-gradient-to-br from-verde-claro/20 to-transparent blur-xl"></div>
             
@@ -83,30 +83,30 @@ const Hero: React.FC = () => {
               <span className="inline-block">em cada consulta</span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-10 text-cinza-escuro/90 leading-relaxed max-w-xl fadeIn font-light" style={{ animationDelay: '0.3s' }}>
+            <p className="text-xl md:text-2xl mb-10 text-cinza-escuro/90 leading-relaxed max-w-xl fadeIn font-light mx-auto lg:mx-0" style={{ animationDelay: '0.3s' }}>
               Obtenha pacientes informados antes da consulta. 
               <span className="font-medium"> Otimize os tempos essenciais da sua rotina de alta performance.</span>
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 fadeIn" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-6 fadeIn justify-center lg:justify-start" style={{ animationDelay: '0.4s' }}>
               {/* Premium button with glow effect */}
               <div className="relative group transition-transform duration-300 hover:scale-105">
                 <div className="absolute -inset-1 bg-gradient-to-r from-verde-escuro via-verde-claro to-verde-escuro rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                 <a href="#planos" className="block">
-                  <Button className="relative premium-btn text-lg py-6 px-10 bg-gradient-to-r from-verde-escuro to-verde-escuro hover:from-verde-escuro hover:to-verde-claro shadow-lg hover:shadow-xl hover:translate-y-[-3px] transition-all duration-500 border border-verde-claro/20 focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50">
+                  <Button className="relative premium-btn text-lg py-6 px-10 bg-gradient-to-r from-verde-escuro to-verde-escuro hover:from-verde-escuro hover:to-verde-claro shadow-lg hover:shadow-xl hover:translate-y-[-3px] transition-all duration-500 border border-verde-claro/20 focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50 animate-subtle-pulse">
                     Teste Grátis 7 Dias
                   </Button>
                 </a>
               </div>
               
-              <div className="flex items-center space-x-3 sm:mt-0 mt-4 fadeIn" style={{ animationDelay: '0.5s' }}>
+              <div className="flex items-center space-x-3 sm:mt-0 mt-4 fadeIn justify-center" style={{ animationDelay: '0.5s' }}>
                 <div className="w-6 h-6 bg-gradient-to-br from-verde-escuro to-verde-escuro/80 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-125">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5F6F5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
                 <p className="text-verde-escuro font-medium text-lg">
-                  7 DIAS DE GARANTIA
+                  2 MESES GRÁTIS NO PLANO ANUAL
                 </p>
               </div>
             </div>
