@@ -50,9 +50,9 @@ const Benefits: React.FC = () => {
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Economize Tempo</h3>
+            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Seu Tempo Mais Valioso, Devolvido.</h3>
             <p className="text-center text-cinza-escuro/80">
-              Quantos minutos você perde recolocando informações básicas? 10-15 minutos dependendo por consulta.
+              A PréClin entrega o histórico do paciente antes da consulta. Use os 10-15 minutos ganhos para diagnósticos mais profundos, não para perguntas básicas.
             </p>
           </div>
           
@@ -67,9 +67,9 @@ const Benefits: React.FC = () => {
                 <polyline points="10 9 9 9 8 9"/>
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Organização Digital</h3>
+            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Adeus Papel, Olá Decisões Precisas.</h3>
             <p className="text-center text-cinza-escuro/80">
-              Elimine formulários em papel desorganizados e tenha todas as informações em um só lugar.
+              Esqueça fichas ilegíveis. Tenha dados cruciais do paciente organizados e acessíveis em segundos em um sistema totalmente intuitivo, para diagnósticos e tratamentos mais seguros.
             </p>
           </div>
           
@@ -84,9 +84,9 @@ const Benefits: React.FC = () => {
                 <line x1="14" y1="1" x2="14" y2="4"/>
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Fluxo Contínuo</h3>
+            <h3 className="text-xl font-bold text-verde-escuro mb-4 text-center">Consultório Eficiente, Pacientes Satisfeitos.</h3>
             <p className="text-center text-cinza-escuro/80">
-              Mantenha o intervalo constante de fluxo de clínica com agendamentos mais eficientes.
+              Consultas ágiles reduzem atrasos e otimizam sua agenda. Menos estresse na sala de espera, mais profissionalismo percebido.
             </p>
           </div>
         </div>

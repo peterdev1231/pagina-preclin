@@ -48,9 +48,9 @@ const HowItWorks: React.FC = () => {
             {/* Step 1 */}
             <div className="flex flex-col md:flex-row items-center mb-16 md:mb-24 fadeIn transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg rounded-lg p-4 md:p-0" style={{ animationDelay: '0.3s' }}>
               <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-center md:text-right">
-                <h3 className="text-2xl font-bold text-verde-escuro mb-3">1. Cadastre seus pacientes</h3>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">1. Cadastro Fácil de Pacientes</h3>
                 <p className="text-cinza-escuro/80">
-                  Importe sua lista de pacientes ou adicione novos com apenas alguns cliques. O sistema é simples e intuitivo.
+                  Cadastre seu paciente novos de forma simples. Nosso sistema intuitivo faz o trabalho pesado por você.
                 </p>
               </div>
               
@@ -72,9 +72,9 @@ const HowItWorks: React.FC = () => {
             {/* Step 2 */}
             <div className="flex flex-col md:flex-row-reverse items-center mb-16 md:mb-24 fadeIn transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg rounded-lg p-4 md:p-0" style={{ animationDelay: '0.5s' }}>
               <div className="md:w-1/2 md:pl-12 mb-6 md:mb-0 text-center md:text-left">
-                <h3 className="text-2xl font-bold text-verde-escuro mb-3">2. Envie o formulário pré-consulta</h3>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">2. Envio Inteligente do Pré-Consulta</h3>
                 <p className="text-cinza-escuro/80">
-                  Com apenas dois cliques, envie por e-mail ou WhatsApp o formulário personalizado para seu paciente preencher.
+                  Com apenas dois cliques, envie um formulário por e-mail ou WhatsApp para seu paciente antes da consulta. Eles preenchem onde e quando for mais conveniente.
                 </p>
               </div>
               
@@ -96,9 +96,9 @@ const HowItWorks: React.FC = () => {
             {/* Step 3 */}
             <div className="flex flex-col md:flex-row items-center fadeIn transition-transform duration-300 hover:scale-[1.01] hover:shadow-lg rounded-lg p-4 md:p-0" style={{ animationDelay: '0.7s' }}>
               <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-center md:text-right">
-                <h3 className="text-2xl font-bold text-verde-escuro mb-3">3. Receba as informações completas</h3>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">3. Diagnóstico Antecipado, Consulta Eficaz</h3>
                 <p className="text-cinza-escuro/80">
-                  Quando seu paciente chegar, você já terá todas as informações necessárias disponíveis em um formato organizado.
+                  Receba todas as informações cruciais do paciente – sintomas, histórico, exames, fotos – de forma organizada, antes da consulta. Quando o paciente entrar em sua sala você já tem um pre diagnóstico.
                 </p>
               </div>
               

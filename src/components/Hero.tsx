@@ -84,8 +84,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-10 text-cinza-escuro/90 leading-relaxed max-w-xl fadeIn font-light mx-auto lg:mx-0" style={{ animationDelay: '0.3s' }}>
-              Obtenha pacientes informados antes da consulta. 
-              <span className="font-medium"> Otimize os tempos essenciais da sua rotina de alta performance.</span>
+              Imagine iniciar cada consulta já sabendo tudo do seu paciente? Eliminando a papelada repetitiva e focando 100% no diagnóstico e no cuidado. A PréClin Conecta torna isso realidade, devolvendo o controle do seu tempo e a profundidade dos seus atendimentos
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 fadeIn justify-center lg:justify-start" style={{ animationDelay: '0.4s' }}>
