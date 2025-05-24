@@ -99,7 +99,7 @@ const Plans: React.FC = () => {
                 </div>
               </div>
               
-              <a href="https://pay.hotmart.com/R99794303O?off=e3nl8u6h" target="_blank" rel="noopener noreferrer">
+              <a href="https://pay.hotmart.com/R99794303O?off=errb81gg" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full py-6 bg-verde-escuro hover:bg-verde-escuro/90 text-white border-2 border-verde-escuro hover:border-verde-claro hover:shadow-xl transition-all duration-300 mt-auto transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50">
                   Quero esse plano
                 </Button>
