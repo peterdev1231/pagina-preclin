@@ -99,9 +99,11 @@ const Plans: React.FC = () => {
                 </div>
               </div>
               
-              <Button className="w-full py-6 bg-verde-escuro hover:bg-verde-escuro/90 text-white border-2 border-verde-escuro hover:border-verde-claro hover:shadow-xl transition-all duration-300 mt-auto transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50">
-                Assinar Agora
-              </Button>
+              <a href="https://go.hotmart.com/R99794303O?off=errb81gg" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full py-6 bg-verde-escuro hover:bg-verde-escuro/90 text-white border-2 border-verde-escuro hover:border-verde-claro hover:shadow-xl transition-all duration-300 mt-auto transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-verde-claro focus:ring-opacity-50">
+                  Assinar Agora
+                </Button>
+              </a>
             </div>
           </div>
           
@@ -186,10 +188,12 @@ const Plans: React.FC = () => {
                 </div>
               </div>
               
-              <Button className="w-full py-6 bg-verde-claro hover:bg-verde-claro/90 text-verde-escuro font-bold border-2 border-verde-claro hover:shadow-2xl transition-all duration-300 animate-pulse mt-auto flex items-center justify-center text-lg transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-verde-escuro focus:ring-opacity-50">
-                <Rocket className="w-5 h-5 mr-2" />
-                Iniciar Teste Grátis
-              </Button>
+              <a href="https://pay.hotmart.com/R99794303O?off=e3nl8u6h" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full py-6 bg-verde-claro hover:bg-verde-claro/90 text-verde-escuro font-bold border-2 border-verde-claro hover:shadow-2xl transition-all duration-300 animate-pulse mt-auto flex items-center justify-center text-lg transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-verde-escuro focus:ring-opacity-50">
+                  <Rocket className="w-5 h-5 mr-2" />
+                  Iniciar Teste Grátis
+                </Button>
+              </a>
               <div className="flex items-center justify-center text-xs text-white/70 mt-3 transition-transform duration-200 hover:translate-y-1">
                 <ShieldCheck className="w-4 h-4 mr-1.5 text-verde-neon" />
                 <span>Teste sem riscos: cancele quando quiser.</span>

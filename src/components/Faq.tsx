@@ -9,12 +9,16 @@ import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
+    question: "Como funciona a Préclin Conecta?",
+    answer: "A Préclin Conecta otimiza o seu tempo de consulta permitindo que você conheça as informações do paciente antes mesmo do atendimento. Funciona assim:\n\n- Gere um Link: Na plataforma, você cria um link para um formulário online via Whatsapp ou E-mail.\n\n- Envie ao Paciente: Compartilhe este link com seu paciente antes da consulta.\n\n- Coleta de Dados: O paciente preenche o formulário com queixas, histórico, medicações, e pode anexar exames e fotos.\n\n- Informação Organizada: Você recebe todos esses dados de forma estruturada em seu painel na PréClin Conecta, antes da chegada do paciente.\n\n- Consulta Eficiente: Com essa pré-análise, sua consulta se torna mais ágil e focada, economizando um tempo valioso."
+  },
+  {
     question: "O sistema PréClin Conecta é intuitivo e prático para médicos?",
     answer: "Sim, desenvolvemos uma interface extremamente intuitiva tanto para médicos quanto para pacientes. Com nosso software para médicos, você poderá enviar formulários com apenas dois cliques, e seus pacientes os preencherão facilmente em qualquer dispositivo."
   },
   {
     question: "Como envio o link do formulário para o paciente usando o sistema?",
-    answer: "Após cadastrar o paciente em nosso sistema para médicos, você pode enviar o link do formulário automaticamente por WhatsApp ou e-mail."
+    answer: "Com apenas dois cliques, envie por e-mail ou WhatsApp o formulário. O paciente preenche o formulário com queixas, histórico, medicações, e pode anexar exames e fotos."
   },
   {
     question: "É mesmo gratuito para testar?",
@@ -131,7 +135,20 @@ const Faq: React.FC = () => {
                   <span className="relative z-10 block text-left">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="px-8 pb-6 text-cinza-escuro/80 relative z-10">
-                  {faq.answer}
+                  {index === 0 ? (
+                    <div>
+                      <p>A Préclin Conecta otimiza o seu tempo de consulta permitindo que você conheça as informações do paciente antes mesmo do atendimento. Funciona assim:</p>
+                      <ul className="list-disc list-inside mt-2 space-y-2">
+                        <li>Gere um Link: Na plataforma, você cria um link para um formulário online via Whatsapp ou E-mail.</li>
+                        <li>Envie ao Paciente: Compartilhe este link com seu paciente antes da consulta.</li>
+                        <li>Coleta de Dados: O paciente preenche o formulário com queixas, histórico, medicações, e pode anexar exames e fotos.</li>
+                        <li>Informação Organizada: Você recebe todos esses dados de forma estruturada em seu painel na PréClin Conecta, antes da chegada do paciente.</li>
+                        <li>Consulta Eficiente: Com essa pré-análise, sua consulta se torna mais ágil e focada, economizando um tempo valioso.</li>
+                      </ul>
+                    </div>
+                  ) : (
+                    faq.answer
+                  )}
                 </AccordionContent>
               </AccordionItem>
             ))}
