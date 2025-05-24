@@ -50,7 +50,7 @@ const HowItWorks: React.FC = () => {
               <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-center md:text-right">
                 <h3 className="text-2xl font-bold text-verde-escuro mb-3">1. Cadastro Fácil de Pacientes</h3>
                 <p className="text-cinza-escuro/80">
-                  Cadastre seu paciente novos de forma simples. Nosso sistema intuitivo faz o trabalho pesado por você.
+                  Cadastre seus pacientes novos de forma simples. Nosso sistema intuitivo faz o trabalho pesado por você.
                 </p>
               </div>
               
@@ -98,7 +98,7 @@ const HowItWorks: React.FC = () => {
               <div className="md:w-1/2 md:pr-12 mb-6 md:mb-0 text-center md:text-right">
                 <h3 className="text-2xl font-bold text-verde-escuro mb-3">3. Diagnóstico Antecipado, Consulta Eficaz</h3>
                 <p className="text-cinza-escuro/80">
-                  Receba todas as informações cruciais do paciente – sintomas, histórico, exames, fotos – de forma organizada, antes da consulta. Quando o paciente entrar em sua sala você já tem um pre diagnóstico.
+                  Receba todas as informações cruciais do paciente – sintomas, histórico, exames, fotos – de forma organizada, antes da consulta. Quando o paciente entrar em sua sala você já tem um pre-diagnóstico.
                 </p>
               </div>
               
