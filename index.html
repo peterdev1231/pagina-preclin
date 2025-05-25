@@ -57,5 +57,30 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      let conversionTagFired = false;
+      const timerInMinutes = 2;
+      const timerInMilliseconds = timerInMinutes * 60 * 1000;
+
+      const fireConversionTag = () => {
+        if (!conversionTagFired && typeof gtag === 'function') {
+          gtag('event', 'conversion', {'send_to': 'AW-17107304072/92aQCOKbzs0aEIj9st0_'});
+          conversionTagFired = true;
+          console.log(`Google Ads conversion tag fired after ${timerInMinutes} minutes.`);
+        }
+      };
+
+      // Set a timer to fire the tag after the specified duration
+      setTimeout(fireConversionTag, timerInMilliseconds);
+
+      // Optional: Clear the timer if the user leaves the page before it fires (more robust tracking)
+      // window.addEventListener('beforeunload', () => {
+      //   clearTimeout(timer);
+      // });
+
+      // Note: This simple implementation relies on the script executing and the gtag function being available.
+      // Ensure your Google Tag (gtag.js) is loaded before this script.
+    </script>
   </body>
 </html>
