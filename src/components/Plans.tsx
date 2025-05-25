@@ -8,15 +8,30 @@ const Plans: React.FC = () => {
   const plansRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    // Observer para a seção de planos
+    const plansObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Disparar a tag SOMENTE quando a seção de planos entrar na viewport
+          if (entry.isIntersecting) {
+            if (typeof gtag === 'function') {
+              gtag('event', 'conversion', {'send_to': 'AW-17107304072/92aQCOKbzs0aEIj9st0_'});
+            }
+            // Parar de observar APÓS o primeiro disparo
+            plansObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 } // Ajuste conforme necessário
+    );
+
+    // Observer para os elementos fadeIn (mantido para a animação)
+    const fadeInObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fadeInActive');
-            if (typeof gtag === 'function') {
-              gtag('event', 'conversion', {'send_to': 'AW-17107304072/92aQCOKbzs0aEIj9st0_'});
-            }
-            observer.unobserve(entry.target);
+            fadeInObserver.unobserve(entry.target);
           }
         });
       },
@@ -25,15 +40,24 @@ const Plans: React.FC = () => {
 
     const elements = document.querySelectorAll('.fadeIn');
     elements.forEach((el) => {
-      observer.observe(el);
+      fadeInObserver.observe(el);
     });
+
+    // Começar a observar a seção de planos
+    if (plansRef.current) {
+      plansObserver.observe(plansRef.current);
+    }
 
     return () => {
       elements.forEach((el) => {
-        observer.unobserve(el);
+        fadeInObserver.unobserve(el);
       });
+      // Limpar observer de planos também
+      if (plansRef.current) {
+        plansObserver.unobserve(plansRef.current);
+      }
     };
-  }, []);
+  }, []); // Dependências vazias para rodar apenas uma vez na montagem
 
   return (
     <section id="planos" className="py-20 bg-branco relative overflow-hidden" ref={plansRef}
