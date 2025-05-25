@@ -8,23 +8,6 @@ const Plans: React.FC = () => {
   const plansRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
-    // Observer para a seção de planos
-    const plansObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Disparar a tag SOMENTE quando a seção de planos entrar na viewport
-          if (entry.isIntersecting) {
-            if (typeof gtag === 'function') {
-              gtag('event', 'conversion', {'send_to': 'AW-17107304072/92aQCOKbzs0aEIj9st0_'});
-            }
-            // Parar de observar APÓS o primeiro disparo
-            plansObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 } // Ajuste conforme necessário
-    );
-
     // Observer para os elementos fadeIn (mantido para a animação)
     const fadeInObserver = new IntersectionObserver(
       (entries) => {
@@ -35,7 +18,7 @@ const Plans: React.FC = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 } // Ajuste conforme necessário
     );
 
     const elements = document.querySelectorAll('.fadeIn');
@@ -43,19 +26,10 @@ const Plans: React.FC = () => {
       fadeInObserver.observe(el);
     });
 
-    // Começar a observar a seção de planos
-    if (plansRef.current) {
-      plansObserver.observe(plansRef.current);
-    }
-
     return () => {
       elements.forEach((el) => {
         fadeInObserver.unobserve(el);
       });
-      // Limpar observer de planos também
-      if (plansRef.current) {
-        plansObserver.unobserve(plansRef.current);
-      }
     };
   }, []); // Dependências vazias para rodar apenas uma vez na montagem
 

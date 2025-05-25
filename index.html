@@ -63,5 +63,23 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      let hasScrolledToBottom = false;
+
+      window.addEventListener('scroll', () => {
+        // Calcula o quanto o usuário rolou em porcentagem
+        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolledPercentage = (window.scrollY / scrollableHeight) * 100;
+
+        // Se o usuário rolou 100% ou mais e a tag ainda não foi disparada
+        if (scrolledPercentage >= 100 && !hasScrolledToBottom) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {'send_to': 'AW-17107304072/__LaCLvwj8waEIj9st0_'});
+            hasScrolledToBottom = true; // Marca como disparada para não repetir
+          }
+        }
+      });
+    </script>
   </body>
 </html>
