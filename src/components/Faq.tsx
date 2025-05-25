@@ -7,6 +7,8 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
+declare const gtag: (...args: any[]) => void;
+
 const faqs = [
   {
     question: "Como funciona a Préclin Conecta?",
@@ -112,7 +114,12 @@ const Faq: React.FC = () => {
             type="single" 
             collapsible 
             className="space-y-6"
-            onValueChange={setActiveItem}
+            onValueChange={(value) => {
+              setActiveItem(value);
+              if (value && typeof gtag === 'function') {
+                gtag('event', 'conversion', {'send_to': 'AW-17107304072/Z3-VCN_6zc0aEIj9st0_'});
+              }
+            }}
           >
             {faqs.map((faq, index) => (
               <AccordionItem 

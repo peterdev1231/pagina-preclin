@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Star, Rocket, ShieldCheck } from 'lucide-react';
 
+declare const gtag: (...args: any[]) => void;
+
 const Plans: React.FC = () => {
   const plansRef = useRef<HTMLDivElement>(null);
   
@@ -11,6 +13,9 @@ const Plans: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fadeInActive');
+            if (typeof gtag === 'function') {
+              gtag('event', 'conversion', {'send_to': 'AW-17107304072/92aQCOKbzs0aEIj9st0_'});
+            }
             observer.unobserve(entry.target);
           }
         });
