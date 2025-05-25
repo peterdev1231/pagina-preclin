@@ -53,55 +53,9 @@
   </head>
 
   <body>
-    <!-- Meta Pixel Code (noscript part) -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=705248791917770&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code (noscript part) -->
-
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-
-    <script>
-      let hasScrolledToBottom = false;
-
-      window.addEventListener('scroll', () => {
-        const totalHeight = document.documentElement.scrollHeight;
-        const viewportHeight = window.innerHeight;
-        const scrolledFromTop = window.scrollY;
-
-        // Calcula a altura total que *pode* ser rolada
-        const scrollableHeight = totalHeight - viewportHeight;
-
-        // Evita divisão por zero ou casos onde não há nada para rolar
-        if (scrollableHeight <= 0) return; 
-
-        // Calcula a porcentagem rolada
-        const scrolledPercentage = (scrolledFromTop / scrollableHeight) * 100;
-
-        // Considera 99.5% ou mais como 'fim da página' para robustez
-        if (scrolledPercentage >= 99.5 && !hasScrolledToBottom) {
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', {'send_to': 'AW-17107304072/__LaCLvwj8waEIj9st0_'});
-            hasScrolledToBottom = true; // Marca como disparada para não repetir
-          }
-        }
-      });
-
-      // Disparar a tag se a página já estiver 100% visível na carga inicial (sem scroll)
-      // Isso é um fallback para páginas muito curtas onde o evento de scroll pode não ocorrer de forma significativa
-      window.addEventListener('load', () => {
-        const totalHeight = document.documentElement.scrollHeight;
-        const viewportHeight = window.innerHeight;
-        if (totalHeight <= viewportHeight && !hasScrolledToBottom) {
-             if (typeof gtag === 'function') {
-                gtag('event', 'conversion', {'send_to': 'AW-17107304072/__LaCLvwj8waEIj9st0_'});
-                hasScrolledToBottom = true; // Marca como disparada
-              }
-        }
-      });
-    </script>
   </body>
 </html>
